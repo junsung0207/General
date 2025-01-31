@@ -189,23 +189,6 @@ body::-webkit-scrollbar {
     padding:0 0 !important;
 }
 
-.subbox h1{
-    font-size:50pt;
-    font-weight: 600;
-    line-height: 80px;
-}
-
-.subbox h2{
-    font-size:26pt;
-    line-height:90px;
-    font-weight: 600;
-}
-
-.subbox h3{
-    font-size:15pt;
-    line-height:30px;
-    font-weight: 300;
-}
 
 
 
@@ -395,6 +378,24 @@ body::-webkit-scrollbar {
         right:19%;
         top:30%;        
     }
+    .subbox h1{
+        font-size:50pt;
+        font-weight: 600;
+        line-height: 80px;
+    }
+    
+    .subbox h2{
+        font-size:26pt;
+        line-height:90px;
+        font-weight: 600;
+    }
+    
+    .subbox h3{
+        font-size:15pt;
+        line-height:30px;
+        font-weight: 300;
+    }
+    
 }
 
 
