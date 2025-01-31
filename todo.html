@@ -1,0 +1,136 @@
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="General" />
+    <meta property="og:site_name" content="General" />
+    <meta property="og:url" content="Team General" />
+    <meta property="og:image" content="./source/img/Thumbnail.png" />
+    <meta property="og:image:width" content="800" />
+    <meta property="og:image:height" content="400" />
+
+    <title>General</title>
+    <link rel="stylesheet" href="./css/index.css">
+    <link rel="stylesheet" href="./css/keyframe.css">
+    <link rel="stylesheet" href="./css/todo.css">
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" importance='high' href="./css/font.css">
+    <!-- <link rel="stylesheet" href="./css/menubar.css">
+    <link rel="stylesheet" href="./css/keyframe.css"> -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=ADLaM+Display&display=swap" rel="stylesheet">
+
+
+  </head>
+
+  <body>
+    <div class="menu-backgroud-container">
+        <div class="menu-container">
+            <a href="./index.html" class="menu-item">INTRODUCE</a>
+            <a href="./team.html" class="menu-item" >TEAM</a>
+            <a href="./todo.html" class="menu-item" id="Menu-Item-Selected">TODO</a>
+            <a href="./contact.html" class="menu-item">CONTACT US</a>
+        </div>
+    </div>
+    
+    <div class="background-container">
+        <div class="back-text-container">
+            <div class="back-text-dog"></div>
+            <div class="back-text">SINCE 2025.01.30</div>
+            <div class="back-text" id="Text-100">GENERAL</div>
+            <div class="back-text">What We Did</div>
+        </div>
+        <img src="./source/img/PIXDOG1.png" alt="" class="back-dog-maincontainer">
+        
+    </div>
+    <div class="back-dog-floating">
+        <div class="back-dog-floating-dog" id="FLOAT1"></div>
+        <div class="back-dog-floating-dog" id="FLOAT2"></div>
+        <!-- <div class="back-dog-floating-dog" id="FLOAT3"></div>
+        <div class="back-dog-floating-dog" id="FLOAT4"></div> -->
+    </div>
+
+    <div class="pam-container" id="pamContainer">
+        <img src="./source/img/PAM.jpg" alt="" class="pam" id="pamImage" onclick="PAMunclicked('pamContainer')"style="cursor: pointer;"   >
+    </div>
+    <div class="pam-container" id="cardsContainer">
+        <img src="./source/img/PAM.jpg" alt="" class="pam" id="pamImage" onclick="PAMunclicked('cardsContainer')"style="cursor: pointer;"   >
+    </div>
+
+    <div class="main-container">
+        <div class="mainbox">
+            <div class="subbox" id="SubboxLeft">
+                <img src="./source/img/PIXDOG1.png" alt="" id="Dogicon">
+                <h1>모두에게 제공되는 팜플렛</h1>
+                <h2>누구나 신청하면 무료로 팜플렛을 제공해드립니다.</h2>
+                <h3>클릭시 확대됩니다.</h3>
+            </div>
+            <div class="subbox">
+                <img src="./source/img/PAM.jpg" alt="" class="subbox" id="Picbox" onclick="PAMclicked('pamContainer')" style="cursor: pointer;">
+            </div>
+        </div>
+        <div class="mainbox">
+            <div class="subbox">
+                <img src="./source/img/PAM.jpg" alt="" class="subbox" id="Picbox" onclick="PAMclicked()" style="cursor: pointer;">
+            </div>
+        </div>
+        <div class="mainbox">
+            <div class="subbox" id="SubboxCenter">
+                <h1>Our SNS</h1>
+                <h2>SNS에서 다양한 자료가 제공됩니다.</h2>
+                <img src="./source/img/PAM.jpg" alt="" class="subbox" id="PicboxBig" onclick="PAMclicked('cardsContainer')" style="cursor: pointer;">  
+                <h3><br><a href="">@general_assist</a></h3>
+            </div>
+        </div>
+        <div class="mainbox">
+            <div class="subbox">
+                <img src="./source/img/PAM.jpg" alt="" class="subbox" id="Picbox">
+            </div>
+            <div class="subbox" id="SubboxLeft">
+                <h1>Symbol of Assist-Dog</h1>
+                <h2>보조견 스티커 제도 활성화 목표</h2>
+                <h3>정부 기관과의 소통을 통해 스티커 개량과 배포, 복지 그리고 관련 법 제정 참여를 목표로 하고 있습니다. <br><br>
+                    보조견 관련 문제를 근본적으로 해결하기 위해 정부 기관과의 직접적인 소통 창구를 마련하고자 합니다. 현재 시민 단체가 보조견 문화를 개선하는 데에는 한계가 있으며, 간접적인 방식으로는 변화가 더디고 실질적인 영향을 미치기 어렵습니다. 따라서 우리 단체는 지속적인 활동을 통해 영향력을 키운 후, 정부와의 직접적인 협력을 추진하여 보조견 정책 개선에 실질적인 역할을 할 것입니다.
+                </h3>
+                <h3></h3>
+            </div>
+        </div>
+        <div class="mainbox">
+            <div class="subbox">
+                <img src="./source/img/TODO1.png" alt="" class="subbox" id="Picbox">
+            </div>
+            <div class="subbox">
+                <h2>보조견 스티커 표준화 및 개선</h2>
+                <h3>현재 한국의 보조견 스티커는 지역별로 다른 디자인과 문구를 사용하고 있어 통일성이 부족하며, 보조견 스티커라는 사실을 한눈에 인식하기 어렵습니다. 이에 따라, 우리 단체는 정부와 협력하여 전국적으로 통일된 보조견 스티커를 개발하고, 실효성을 높일 수 있도록 디자인을 개선할 계획입니다. 프랑스의 사례를 참고하여 그림만으로도 보조견 안내임을 명확히 알 수 있도록 하고, 문구를 직관적이고 강력하게 표현하여 보조견 출입 권리를 강조할 것입니다.</h3>
+            </div>
+        </div>
+        <div class="mainbox">
+            <div class="subbox">
+                <img src="./source/img/todo2.jpg" alt="" class="subbox" id="Picbox">
+            </div>
+            <div class="subbox">
+                <h2>보조견 복지 및 법적 개선 추진</h2>
+                <h3>정부와의 소통을 통해 보조견 사용자의 의견을 반영한 복지 및 법률 개선을 추진할 것입니다. 이를 통해 보조견의 은퇴 이후 생활 지원, 보조견 이용자의 경제적 부담 경감, 인적·재정적 지원 확대 등을 목표로 합니다.
+                    또한, 장기적으로는 보조견 문화 교육을 정규 교육 과정에 포함하여 전국민이 보조견의 역할과 권리에 대해 올바르게 이해할 수 있도록 할 계획입니다. 이를 통해 보조견에 대한 사회적 인식이 개선되고, 한국에서도 안정적인 보조견 문화가 정착될 수 있도록 노력하겠습니다.</h3>
+            </div>
+        </div>
+        <div class="mainbox">
+            <div class="subbox" id="SubboxCenter">
+                <h2>이외에도 다양한 목표를 이뤄가고 있습니다.</h2>
+                <h3>보조견이 함께 어우러지는 세상이 올때까지, General은 나아갈 것입니다.</h3>
+            </div>
+        </div>
+
+        <div class="footer">
+            <p>Copyright @ Junseong Yun All rights Reserved</p>
+            <p>Contact Us : 010-1111-1111</p>
+        </div>
+    </div>
+    
+
+    
+    <script type="text/javascript" src="./js/todo.js"></script>
+    <script type="text/javascript" src="./js/index.js"></script>
+  </body>

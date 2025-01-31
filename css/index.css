@@ -1,0 +1,378 @@
+/* 스크롤바 숨기기 (웹킷 기반 브라우저) */
+body::-webkit-scrollbar {
+    width: 0; /* 세로 스크롤바 너비 */
+    height: 0; /* 가로 스크롤바 높이 */
+}
+
+.background-container{
+    width:100%;
+    height:100%;
+    /* background-color:#f2f2f2; */
+    background-image:url("../source/img/BG1.jpg");
+    background-size:cover;
+    position:fixed;
+    z-index:-2;
+}
+
+.back-text-container{
+    width:auto;
+    top:14%;
+    height:70%;
+    position:fixed;
+
+    display:flex;
+    flex-direction:column;
+    justify-content: center;
+    align-items:flex-start;
+    
+    left:5%;
+}
+
+.back-text-container .back-text{
+    font-family: "ADLaM Display", serif;
+    font-weight: 100;
+    font-style: normal;
+    font-size:30px;
+    margin:10px 0;
+}
+
+.back-text-dog{
+    width:50px;
+    height:50px;
+    background-image:url("../source/img/DOG3.png");
+    background-size:cover;
+}
+
+#Text-100{
+    font-size:130px;
+}
+
+.back-dog-maincontainer{
+    /* width:300px;
+    height:240px; 쿼리 적용*/
+    background-size:cover;
+    background-repeat: none;
+
+    position:fixed;
+    z-index:-1;
+
+    /* animation:opacityOn 0.3s ease; */
+}
+
+.back-dog-floating-dog{
+    width:100px;
+    height:80px;
+    position:fixed;
+    background-image: url("../source/img/DOG3.png");
+    background-size:cover;
+    transition:0.3s ease;
+    
+    z-index:3;
+}
+
+#FLOAT1{
+    left:20%;
+    top:15%;
+    animation:marginleftOn 0.5s ease;
+}
+
+#FLOAT2{
+    right:10%;
+    bottom:10%;
+    width:150px;
+    height:120px;
+    animation:marginrightOn 0.5s ease;
+}
+
+#FLOAT3{
+    width:200px;
+    height:200px;
+
+    right:45%;
+    bottom:14%;
+    background-image: url("../source/img/dogpic1.jpg");
+    background-size:cover;
+    border-radius: 200px;
+    z-index:-2;
+}
+
+#FLOAT4{
+    width:250px;
+    height:250px;
+
+    right:5%;
+    top:12%;
+    background-image: url("../source/img/dogpic2.jpg");
+    background-size:cover;
+    border-radius: 200px;
+    z-index:-2;
+}
+
+#FLOAT1:hover{
+    left:22%;
+    transition:0.3s ease;
+}
+
+#FLOAT2:hover{
+    right:12%;
+    transition:0.3s ease;
+}
+
+
+.main-container{
+    width:100%;
+    height:auto;
+    
+    /* background-color:#f2f2f2; */
+    position:absolute;
+    top:100%;
+    
+    display:flex;
+    flex-direction:column;
+    justify-content: center;
+    align-items: center;
+
+    z-index:1;
+}
+
+.mainbox{
+    /* border:1px solid gray; */
+    width:100%;
+    height:800px;
+
+    display:flex;
+    flex-direction: row;
+    justify-content:space-around;
+    align-items: center;
+    
+    font-family:Pretendard,sans-serif;
+    font-size:30pt;
+}
+
+.subbox{
+    /* border:1px solid gray; */
+    line-height:80px;
+    max-width:960px;
+}
+
+#SubboxLeft{
+    text-align:start;
+}
+#SubboxRight{
+    text-align:end;
+}
+#SubboxCenter{
+    text-align:center;
+}
+
+#Dogicon{
+    width:50px;
+    height:auto;
+}
+
+#Personicon{
+    width:300px;
+    height:300px;
+    
+    border-radius: 1000px;
+}
+
+#Picbox{
+    width:500px;
+    height:auto;
+}
+
+#PicboxBig{
+    width:100%;
+    height:auto;
+}
+
+.subbox h1{
+    font-size:50pt;
+    font-weight: 600;
+    line-height: 80px;
+}
+
+.subbox h2{
+    font-size:26pt;
+    line-height:90px;
+    font-weight: 600;
+}
+
+.subbox h3{
+    font-size:15pt;
+    line-height:30px;
+    font-weight: 300;
+}
+
+
+
+.menu-backgroud-container{
+    width:100%;
+    height:100px;
+    position:fixed;
+    top:0;
+    /* background-color:#bfbfbf; */
+
+    z-index: 2;
+}
+.menu-container{
+    width:40%;
+    height:auto;
+
+    position:fixed;
+    right:8%;
+    z-index: 3;
+    top:40px;
+    font-size:16pt;
+    font-weight:600;
+
+    display:flex;
+    flex-direction: row;
+    justify-content:space-around;
+    align-items: center;
+    
+    font-family:Pretendard, sans-serif;
+}
+
+.menu-item{
+    width:auto;
+    height:auto;
+    text-decoration: none;
+    color:black;
+    
+
+    background-color:none;
+    padding:8px 4px;
+    border-bottom:0.5px solid #a7a8a000;
+}
+
+#Menu-Item-Selected{
+    border-bottom:0.5px solid #a7a8a0;
+}
+
+
+.menu-item:hover{
+    
+    transition:0.3s ease;
+    color: #a7a8a0;
+
+    /* border-bottom:0.5px solid #a7a8a0; */
+}
+.menu-item:active{
+    background-color:#a7a8a0;
+}
+
+.footer{
+    width:100%;
+    height:100px;
+    background-color:gray;
+    color:white;
+
+    display:flex;
+    flex-direction: column;
+    justify-content:center;
+    align-items:center;
+
+    text-align: center;
+    padding:0 0 0 0;
+}
+
+
+/* 모바일 적용 */
+@media screen and (max-width: 1068px) {
+    .back-dog-maincontainer{
+        width:100px;
+        height:90px;
+        left:210px;   
+        top:37%; 
+    }
+    .menu-container{
+        width:80%;
+        right:10%;
+        font-size:10pt;
+    }
+    #Text-100{
+        font-size:70px;
+    }
+    .back-text-container .back-text{
+        font-size:20px;
+    }
+    #FLOAT1{
+        width:40px;
+        height:32px;
+    }
+    
+    #FLOAT2{
+        width:60px;
+        height:48px;
+    }
+    #FLOAT3{
+        width:120px;
+        height:120px;
+        left:12%;
+    }
+    #FLOAT4{
+        width:100px;
+        height:100px;
+    }
+
+    .mainbox{
+        flex-direction: column;
+        justify-content:space-around;
+        align-items: center;
+        height:auto;
+    }
+    .subbox{
+        width:80%;
+        left:10%;
+        margin:60px 0;
+    }
+
+    #Picbox{
+        width:90%;
+    }
+    #PicboxBig{
+        width:100%;
+    }
+
+
+    .subbox h1{
+        font-size:26pt;
+        font-weight: 600;
+    }
+    
+    .subbox h2{
+        font-size:15pt;
+        line-height:50px;
+        font-weight: 500;
+    }
+    
+    .subbox h3{
+        font-size:10pt;
+        line-height:20px;
+        font-weight: 300;
+    }
+}
+
+/* PAD 적용 */
+@media screen and (min-width: 1068px) {
+    .back-dog-maincontainer{
+        width:300px;
+        height:270px;
+        right:16%;
+        top:40%; 
+    }
+}
+
+/* 1600px 이상 */
+@media screen and (min-width: 1600px){
+    .back-dog-maincontainer{
+        width:500px;
+        height:450px;
+        right:19%;
+        top:30%;        
+    }
+}
+
+

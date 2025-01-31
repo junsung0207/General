@@ -1,0 +1,26 @@
+@keyframes opacityOn {
+    0%{
+      opacity:0;
+    }
+    100%{
+      opacity:1;
+    }
+  }
+  
+@keyframes marginleftOn {
+    0%{
+        margin-left:3%;
+    }
+    100%{
+        margin-left:0;
+    }
+}
+
+@keyframes marginrightOn {
+    0%{
+        margin-right:3%;
+    }
+    100%{
+        margin-right:0;
+    }
+}
