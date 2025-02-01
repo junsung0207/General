@@ -118,6 +118,11 @@ body::-webkit-scrollbar {
     transition:0.3s ease;
 }
 
+.mainlogo{
+    position:fixed;
+    z-index:5;
+    cursor:pointer;
+}
 
 .main-container{
     width:100%;
@@ -305,6 +310,14 @@ body::-webkit-scrollbar {
         height:100px;
     }
 
+    .mainlogo{
+        width:30px;
+        height:auto;
+        
+        top:10px;
+        left:46.5%;
+    }
+
     .mainbox{
         flex-direction: column;
         justify-content:space-around;
@@ -370,6 +383,14 @@ body::-webkit-scrollbar {
         line-height:20px;
         font-weight: 300;
     }
+
+    .mainlogo{
+        width:50px;
+        height:auto;
+        
+        top:40px;
+        left:110px;
+    }
     
 }
 
@@ -397,6 +418,13 @@ body::-webkit-scrollbar {
         font-size:15pt;
         line-height:30px;
         font-weight: 300;
+    }
+    .mainlogo{
+        width:60px;
+        height:auto;
+        
+        top:50px;
+        left:140px;
     }
     
 }
