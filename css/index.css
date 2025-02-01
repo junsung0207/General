@@ -261,6 +261,9 @@ body::-webkit-scrollbar {
 
     text-align: center;
     padding:0 0 0 0;
+    font-size:8pt;
+    font-family:Pretendard, sans-serif;
+    font-weight:200;
 }
 
 
