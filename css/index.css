@@ -73,7 +73,7 @@ body::-webkit-scrollbar {
 #FLOAT1{
     left:20%;
     top:15%;
-    animation:marginleftOn 0.5s ease;
+    animation:marginleftOn 0.9s ease;
 }
 
 #FLOAT2{
@@ -81,7 +81,7 @@ body::-webkit-scrollbar {
     bottom:10%;
     width:150px;
     height:120px;
-    animation:marginrightOn 0.5s ease;
+    animation:marginrightOn 0.9s ease;
 }
 
 #FLOAT3{
