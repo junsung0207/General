@@ -1,17 +1,43 @@
 /* 스크롤바 숨기기 (웹킷 기반 브라우저) */
+
+body {
+    -ms-overflow-style: none;  /* IE, Edge */
+    scrollbar-width: none; /* Firefox */
+    overscroll-behavior: none; /* iOS에서 튕기는 효과 방지 */
+}
+
 body::-webkit-scrollbar {
+    
     width: 0; /* 세로 스크롤바 너비 */
     height: 0; /* 가로 스크롤바 높이 */
 }
 
 .background-container{
     width:100%;
-    height:100%;
+    height: 100vh;
     /* background-color:#f2f2f2; */
     background-image:url("../source/img/BG1.jpg");
     background-size:cover;
+    background-attachment: fixed;
+    background-position: center;
     position:fixed;
     z-index:-2;
+}
+
+@supports (-webkit-touch-callout: none) {
+    .background-container {
+        background-attachment: scroll;
+    }
+}
+
+.background-container::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backdrop-filter: blur(1px); 
+    -webkit-backdrop-filter: blur(1px);
+    z-index: -1;
 }
 
 .back-text-container{
@@ -34,6 +60,8 @@ body::-webkit-scrollbar {
     font-style: normal;
     font-size:30px;
     margin:10px 0;
+    -webkit-font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
 }
 
 .back-text-dog{
@@ -274,6 +302,7 @@ body::-webkit-scrollbar {
 
 /* 모바일 적용 */
 @media screen and (max-width: 1068px) {
+    
     .back-dog-maincontainer{
         width:100px;
         height:90px;
@@ -430,3 +459,9 @@ body::-webkit-scrollbar {
 }
 
 
+/* iOS에서 fixed 요소 터치 스크롤 문제 해결 */
+@media (hover: none) and (pointer: coarse) {
+    .background-container {
+        height: 100%;
+    }
+}
