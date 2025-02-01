@@ -141,7 +141,18 @@ body::-webkit-scrollbar {
     transition:0.3s ease;
 }
 
+#FLOAT1:active{
+    left:22%;
+    transition:0.3s ease;
+}
+
+
 #FLOAT2:hover{
+    right:12%;
+    transition:0.3s ease;
+}
+
+#FLOAT2:active{
     right:12%;
     transition:0.3s ease;
 }
@@ -321,13 +332,13 @@ body::-webkit-scrollbar {
         font-size:20px;
     }
     #FLOAT1{
-        width:40px;
-        height:32px;
+        width:32px;
+        height:25.6px;
     }
     
     #FLOAT2{
-        width:60px;
-        height:48px;
+        width:48px;
+        height:38.4px;
     }
     #FLOAT3{
         width:120px;
