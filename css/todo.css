@@ -21,14 +21,20 @@
 
 .pam{
     width:85%;
-    max-width:1500px;
+    max-width:1200px;
     height:auto;
 
     background-color:white;
 }
 
 @media (max-width: 768px) { /* 모바일 적용 */ 
-    .pam {
-        content: url("../source/img/PAM.jpg"); 
+    /* #pamContainer {
+        content: url("../source/img/PAMm1.jpg"); 
+    }
+    #pamContainer2 {
+        content: url("../source/img/PAMm2.jpg"); 
+    } */
+    .pam{
+        width:100%;
     }
 }
